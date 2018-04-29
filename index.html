@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src='vendor/three.js/three.js'></script>
+	<script src="vendor/require.js/require.js"></script>
+	<script src="vendor/three.js/examples/js/Detector.js"></script>
+	<script src="vendor/threex.windowresize.js"></script>
+	<script src="main.js"></script>
+	<style>
+		#info {
+			position: absolute;
+			top: 10px;
+			width: 100%;
+			text-align: center;
+			z-index: 100;
+			display:block;
+			color:white;
+		}
+		#gameOver
+		{
+			width: 800px;
+			border-radius: 5px;
+			background: #ccc;
+			padding: 10px;
+			height: 50px;
+			position: absolute;
+			margin-top: -25px;
+			margin-left: -400px;
+			top: 50%;
+			left: 50%;
+			text-align: center;
+			font-size: 40px;
+			display: none;
+		}
+	</style>
+</head>
+</html>
+<body style='margin: 0px; background-color: #bbbbbb; overflow: hidden;'>
+	<div id="info">
+			<div id="score">Score : 0</div>
+			<div id="level">Level : 1</div>
+			<div id="positions"></div>
+	</div>
+	<div id="gameOver">
+			Game Over. Good Luck Next Time... 
+	</div>
+</body>
+</html>
